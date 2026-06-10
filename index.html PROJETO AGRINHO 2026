@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida | Consciência contra o Desmatamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Eco<span>Vida</span></div>
+        <nav>
+            <a href="#sobre">O Problema</a>
+            <a href="#acoes">Como Ajudar</a>
+            <a href="#Calculadora">Simulador</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Proteja Nossas Florestas</h1>
+            <p>O desmatamento destrói vidas, biomas e o nosso futuro. Descubra como fazer a diferença hoje.</p>
+            <a href="#acoes" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <h2>O Impacto do Desmatamento</h2>
+        <p>A perda de cobertura vegetal compromete a biodiversidade, altera o ciclo de chuvas e acelera o aquecimento global. Preservar as florestas não é apenas proteger árvores, é garantir a sobrevivência humana.</p>
+    </section>
+
+    <section id="acoes" class="bg-light">
+        <div class="container">
+            <h2>Como Você Pode Ajudar?</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Consumo Consciente</h3>
+                    <p>Evite produtos de empresas associadas ao desmatamento ilegal. Priorize papel reciclado e madeira certificada.</p>
+                </div>
+                <div class="card">
+                    <h3>Apoie ONGs</h3>
+                    <p>Contribua com instituições sérias que trabalham no reflorestamento e na fiscalização de áreas protegidas.</p>
+                </div>
+                <div class="card">
+                    <h3>Dissemine Informação</h3>
+                    <p>Use sua voz e redes sociais para conscientizar amigos e familiares sobre a urgência climática.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Calculadora" class="container">
+        <h2>Simulador de Impacto: Árvores Salvas</h2>
+        <p>Descubra quantas árvores você pode ajudar a poupar por ano mudando pequenos hábitos cotidianos.</p>
+        
+        <div class="form-simulador">
+            <label for="papeis">Quantas resmas de papel (A4) você usa por mês?</label>
+            <input type="number" id="papeis" min="0" value="0">
+
+            <label for="reciclagem">Você recicla seu lixo regularmente?</label>
+            <select id="reciclagem">
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+            </select>
+
+            <button onclick="calcularImpacto()">Calcular Impacto</button>
+        </div>
+
+        <div id="resultado" class="resultado-box">
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EcoVida - Projeto de Conscientização Ambiental.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
